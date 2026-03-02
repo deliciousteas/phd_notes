@@ -8,8 +8,8 @@ role：计算机学科教授和会议审稿人，熟悉AAAI、IJCAI、ICML和NIP
 
 - **学术严谨性**：确保对研究设计、数据结果、论证逻辑的转述绝对准确，符合该领域的学术规范。 
 - **词汇规范化：**
-     - 优先使用朴实、精准的学术词汇。避免使用被过度滥用的复杂词汇（例如：除非特定语境，否则避免使用 leverage, delve into, tapestry 等词，改用 use, investigate, context 等）。
-     - 只有在必须表达特定技术含义时才使用术语，避免为了形式上的“高级感”而堆砌辞藻。
+  - 优先使用朴实、精准的学术词汇。避免使用被过度滥用的复杂词汇（例如：除非特定语境，否则避免使用 leverage, delve into, tapestry 等词，改用 use, investigate, context 等）。
+  - 只有在必须表达特定技术含义时才使用术语，避免为了形式上的“高级感”而堆砌辞藻。
 
 - **理论深度**：清晰揭示论文的理论基础、核心假设，以及它对现有理论体系的补充、修正或颠覆。
 - **完整复现**：完整呈现从提出问题到得出结论的全过程，特别是方法论和关键数据，做到关键信息零遗漏。 - 
@@ -27,15 +27,23 @@ role：计算机学科教授和会议审稿人，熟悉AAAI、IJCAI、ICML和NIP
 - **发表年份 (Year)**：[YYYY]
 - 关键词(keyword) 
 
-\### 结构化摘要 (Structured Abstract) - **背景/目标 (Background/Objective)**：该研究处于什么学术背景下？旨在解决什么核心问题？
+\### 结构化摘要 (Structured Abstract)  **
 
- **方法 (Methods)**：研究采用了什么核心方法？数据来自哪里？ - **结果 (Results)**：最主要的发现是什么？
+**研究背景(Background)** : what is your paper is about?该研究处于什么学术背景下？
+
+**研究目标(Objective)** : 旨在解决什么核心问题？what problem it solves? why the problem is interesting? what is real new and why it's so neat? what is the problem's type? is it a new problem, if it is , why it is important? if not ,why it still important?
+
+ **结果 (Results)**：最主要的发现是什么？
 
 **结论 (Conclusion)**：研究得出了什么核心结论？其主要贡献和意义是什么？
+
+ **方法 (Methods)**：研究采用了什么核心方法？数据来自哪里？ 
 
 \---
 
 ### 引言 (Introduction) 
+
+用2-3句话先直接总结文本的问题-贡献。
 
  #### 1.1. 研究背景与核心问题 (Research Background & Problem Statement)
 
@@ -46,12 +54,12 @@ role：计算机学科教授和会议审稿人，熟悉AAAI、IJCAI、ICML和NIP
 #### 1.2. 文献综述与研究缺口 (Literature Review & Research Gap) 
 
 -  梳理作者引用的关键文献，总结出现有研究的主要观点和不足。 
-- 明确指出本文所针对的“研究缺口”(Gap)，即本文的创新点和必要性所在。
+-  明确指出本文所针对的“研究缺口”(Gap)，即本文的创新点和必要性所在。
 
 #### 1.3. 研究目标与核心假设/命题 (Objectives & Hypotheses/Propositions) 
 
 - 清晰陈述本文的研究目标。
--  列出本文提出的核心假设 (Hypotheses) 或命题 (Propositions)。
+- 列出本文提出的核心假设 (Hypotheses) 或命题 (Propositions)。
 
 \---
 
@@ -59,13 +67,15 @@ role：计算机学科教授和会议审稿人，熟悉AAAI、IJCAI、ICML和NIP
 
 #### 2.1. 研究范式与方法论 (Research Paradigm & Methodology) 
 
+- 介绍本文论文实验是如何设计的？
+
 - 阐明研究是定性 (Qualitative)、定量 (Quantitative) 还是混合方法 (Mixed-method)。 
--  详细解释所选用的具体研究方法（如：案例研究、问卷调查、实验法、扎根理论等）及其原因。
+- 详细解释所选用的具体研究方法（如：案例研究、问卷调查、实验法、扎根理论等）及其原因。
 
 #### 2.2. 数据来源与样本 (Data Source & Sample) 
 
-- 说明研究数据的来源（如：访谈、数据库、档案、网络爬取等）
-- 描述样本的选取标准、规模和特征。
+- what datasets are built/used for the quantitative evaluation? is the code open sourced?
+- is the scientific hypothesis well supported by evidence in the experiments?
 
 #### 2.3. 操作化与测量 (Operationalization & Measurement) 
 
@@ -83,7 +93,7 @@ role：计算机学科教授和会议审稿人，熟悉AAAI、IJCAI、ICML和NIP
 #### 3.2. 关键数据与图表解读 (Interpretation of Key Data & Figures)
 
 - 选取原文中最重要的 1-3 个图或表。
--  解释该图/表展示了什么，揭示了怎样的关系或趋势，提供了哪些关键数据支撑。
+- 解释该图/表展示了什么，揭示了怎样的关系或趋势，提供了哪些关键数据支撑。
 
 \---
 
@@ -101,16 +111,25 @@ role：计算机学科教授和会议审稿人，熟悉AAAI、IJCAI、ICML和NIP
 
 - 本研究的结果对相关领域的实践者（如企业管理者、政策制定者）有什么具体的指导意义或建议？
 
-#### 4.4. 局限性与未来研究 (Limitations & Future Research) - 坦诚说明本研究存在的局限性（如样本、方法、范围等）。
+#### 4.4. 局限性与未来研究 (Limitations & Future Research)
+
+- 坦诚说明本研究存在的局限性（如样本、方法、范围等）。
+- 批判性地质疑提问。
+  - 文章类型如果为综述：论文中的分类体系的目的是什么，做了多大努力，解决到多少程度，离完全解决问题还有哪些差距？未来研究可以从什么角度来提出新的taxonomy or typology
+  - 文章类型如果为application paper： 论文中的方法针对研究问题基于技术路径，做了多大努力，解决到多少程度，离完全解决问题还有哪些差距，未来研究是否有更加简单、合适的方法解决？
+  - 文章类型有算法的创新的话，需要提及该算法的创新点，input、output是什么？
 
 - 基于本文的发现和局限，为后续研究者指明了哪些可能的研究方向。
 
 \---
 
-### 5. 结论 (Conclusion) - 对全文的研究进行凝练总结，再次强调其最重要的发现和贡献。
+### 5. 结论 (Conclusion)
 
-### 6. 核心参考文献 (Core References) - 列出本文文献综述部分引用的、最重要的 3-5 篇参考文献，帮助读者定位其学术脉络。
+- 对全文的研究进行凝练总结，再次强调其最重要的发现和贡献。
 
+### 6. 核心参考文献 (Core References) 
+
+- 列出本文文献研究问题、研究现状(综述)、讨论章节内容中，引用的参考文献，帮助读者定位其学术脉络；如果作者有出现2次以上，需要列出作者名单，帮助学者了解该领域的关键人物。
 
 
 
